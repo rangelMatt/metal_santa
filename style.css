@@ -19,6 +19,7 @@ section {
 h1 {
     text-align: center;
     color: rgb(255, 0, 0);
+    font-family: cursive;
 }
 
 h2 {
@@ -33,4 +34,8 @@ li {
     margin: 25px;
     text-align: center;
     padding: 3px 25px;
+}
+
+footer {
+    text-align: center;
 }

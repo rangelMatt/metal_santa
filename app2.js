@@ -36,3 +36,27 @@ function secretMessage(){
         }
     }
     
+function guessingGame() {
+    let userAnswer = prompt('How many reindeer does Santa have?');
+    let correctAnswer = 9; //may come back and provide different number
+    let attempts = 8;
+
+    for (let i = 1; i < attempts; i++) {
+        while(userAnswer < 1 || userAnswer > 100) {
+            userAnswer = prompt('Please Try Again! A number 1-100');
+        }
+        if (userAnswer == correctAnswer) {
+            alert('YOU WON!');
+            document.write("Game Winner")
+            break;
+        } else if (userAnswer > correctAnswer) {
+            userAnswer = prompt('TOO HIGH! Please, try again.')
+        } else if (userAnswer < correctAnswer) {
+            userAnswer = prompt('TOO LOW! Please, try again.')
+        }
+        if(i == 7) {
+            alert(`The correct answer was ${correctAnswer}`)
+            document.write("Game Loser");
+        }
+    }
+}

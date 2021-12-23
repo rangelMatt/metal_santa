@@ -2,14 +2,12 @@
 
 function askUserQuestion(){
     let userNameInside = prompt('Please Enter your Name.');
-    
-    console.log(userName);
     if (userNameInside == 'Matt'){
         document.write(`Welcome ${userNameInside}!`)
       } else {
           document.write(`Welcome ${userNameInside}`)
       }
-    return userNameInside;
+    // return userNameInside;
 }
     
 
@@ -22,7 +20,6 @@ function secretMessage(){
             document.write('Santa is the SLEIGHER!!!')
         }
     }
-
 }
 
 
